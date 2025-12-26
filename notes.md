@@ -42,9 +42,8 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 and Port is where the server will listen to 
 
 - `s.listen()
-    conn, addr = s.accept()` Here .listen() makes the server an listening socket and allow client to make an # way handshake tcp connection to the socket, once the TCP connection is established  with the socket
-    the request wait in the ***unaccepted connections list*** the completed TCP connections will wait in the queue (the list ) to accept them .
-    Now .aacpet() -  it returns its  own socket after the successfull TCP connection witch will contian the actuall data.   
+    conn, addr = s.accept()` Here .listen() makes the server an listening socket and allow client to make an 3 way handshake tcp connection to the socket, once the TCP connection is established  with the socket
+    it  waits in the ***unaccepted connections list*** the completed TCP connections will wait in the queue (the list ) . To accept them  we use accept() -  it returns its  own socket after the successfull TCP connection witch will contian the actuall data.   
     ***s*** - Socket Only used for connecting   
     ***conn*** - Socket that has an established TCP connctions with the Data.   
     This is the Socket used for communication 
@@ -59,3 +58,8 @@ SO once we recive an empty object that is the EOL
 ![alt text](Echo_server_and_client/sockets-loopback-interface.44fa30c53c70.avif)
 
 - Applicatiosn uses loopback interface  to securly communicate  with other applications inside the host to isolate from external network
+
+
+
+## Multiple Connections
+- 
