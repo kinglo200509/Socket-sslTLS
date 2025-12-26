@@ -16,3 +16,5 @@ with socket.socket(socket.AF_INET , socket.SOCK_STREAM) as s:
       if not data:
         break
       connn.sendall(data)
+      # returns an ephemeral port (an port selected by os for client to communicate to port no 8000 of server)
+      print(data)
