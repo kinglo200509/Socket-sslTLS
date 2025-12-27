@@ -61,5 +61,3 @@ SO once we recive an empty object that is the EOL
 
 
 
-## Multiple Connections
-- 
